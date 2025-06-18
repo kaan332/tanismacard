@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benimle Tanışır mısın?</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="welcome-screen">
+        <h1>Benimle tanışmak ister misin?</h1>
+        <div class="button-container">
+            <button id="yes-btn">Evet!</button>
+            <button id="no-btn">Hayır</button>
+        </div>
+    </div>
+
+    <div id="card-container" class="hidden">
+        <div class="card">
+            <h2>Tanışma Kartı</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="isim">İsim</label>
+                    <input type="text" id="isim" name="isim" placeholder="Adını yazar mısın?" required>
+                </div>
+                <div class="form-group">
+                    <label for="soyisim">Soyisim</label>
+                    <input type="text" id="soyisim" name="soyisim" placeholder="Soyadın nedir?" required>
+                </div>
+                <div class="form-group">
+                    <label for="dogum-tarihi">Doğum Tarihi</label>
+                    <input type="date" id="dogum-tarihi" name="dogum-tarihi" required>
+                </div>
+                <div class="form-group">
+                    <label for="nereli">Nerelisin?</label>
+                    <input type="text" id="nereli" name="nereli" placeholder="Memleketin neresi?" required>
+                </div>
+                <div class="form-group">
+                    <label for="aktiviteler">Hoşlandığın Aktiviteler</label>
+                    <textarea id="aktiviteler" name="aktiviteler" rows="3" placeholder="Neler yapmaktan keyif alırsın?" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="uc-kelime">Kendini 3 Kelimeyle Anlat</label>
+                    <input type="text" id="uc-kelime" name="uc-kelime" placeholder="Örn: Enerjik, Maceracı, Komik" required>
+                </div>
+                <button type="submit" id="submit-btn">Tanış!</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-firestore-compat.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
