@@ -32,7 +32,6 @@ body {
     min-height: 100vh;
     background: var(--background-gradient);
     color: var(--text-color);
-    overflow: hidden; /* Kaçan butonun scroll oluşturmasını engeller */
     padding: 1rem; /* Kenarlara boşluk ekleyerek mobil taşmaları engeller */
 }
 
@@ -114,7 +113,6 @@ button {
 
 #no-btn {
     background-color: var(--no-color);
-    position: absolute; /* Hareket edebilmesi için gerekli */
 }
 
 
